@@ -17,8 +17,19 @@ namespace Csharp_Basic
             Console.WriteLine("please enter the second number");
             int second = Convert.ToInt32(Console.ReadLine());
 
-            Calculator Calculator = new Calculator(first,second);
-            Calculator.Addition();
+            Calculator Calculator1 = new Calculator(first,second);
+            Calculator1.Addition();
+            Calculator1.substraction();
+
+
+            Console.WriteLine("please enter the first number");
+            int third = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the second number");
+            int fourth = Convert.ToInt32(Console.ReadLine());
+
+            Calculator Calculator2 = new Calculator(third,fourth);
+            Calculator2.Addition();
+            Calculator2.substraction();
             Console.ReadLine();
         }
     }

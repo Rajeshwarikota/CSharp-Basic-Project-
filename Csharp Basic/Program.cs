@@ -11,7 +11,43 @@ namespace Csharp_Basic
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Csharp Basic Project");
+            Console.WriteLine("please choose any one program from below options");
+            Console.WriteLine("1:Calculator\n2:SwitchCaseConcept\n10:Exit");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("please enter the first number");
+                    int first=Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("please enter the second number");
+                    int second = Convert.ToInt32(Console.ReadLine());
 
+                    Calculator Calculator1 = new Calculator(first,second);
+                    Calculator1.Addition();
+                    Calculator1.substraction();
+
+
+                    Console.WriteLine("please enter the first number");
+                    int third = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("please enter the second number");
+                    int fourth = Convert.ToInt32(Console.ReadLine());
+
+                    Calculator Calculator2 = new Calculator(third,fourth);
+                    Calculator2.Addition();
+                    Calculator2.substraction();
+                    break;
+                case 2:
+                    Console.WriteLine("please choose a day 'from 1 to 7'");
+                    int day = Convert.ToInt32(Console.ReadLine());
+                    WeekDays.FindDayWhichFallsOnWeek(day);
+                    break;
+                case 10:
+
+                    break;
+                default:
+                    Console.WriteLine("please choose number within given option");
+                    break;
+            }
             /// Console.WriteLine("please enter the first number");
             ///int first=Convert.ToInt32(Console.ReadLine());
             ///Console.WriteLine("please enter the second number");
@@ -53,9 +89,7 @@ namespace Csharp_Basic
             ///Calculator4.Division();
 
 
-            Console.WriteLine("please choose a day 'from 1 to 7'");
-            int day = Convert.ToInt32(Console.ReadLine());
-            WeekDays.FindDayWhichFallsOnWeek(day);
+            
             Console.ReadLine();
 
         }

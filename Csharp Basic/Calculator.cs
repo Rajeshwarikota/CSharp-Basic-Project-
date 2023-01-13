@@ -33,5 +33,10 @@ namespace Csharp_Basic
             result = Math.Abs(first - second);
             Console.WriteLine("substraction:" + result);
           }
+        public void Multiplication()
+        {
+            result = first * second;
+            Console.WriteLine("Multiplication:" + result);
+        }
     }
 }

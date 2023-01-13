@@ -30,7 +30,18 @@ namespace Csharp_Basic
             Calculator Calculator2 = new Calculator(third,fourth);
             Calculator2.Addition();
             Calculator2.substraction();
+
+            Console.WriteLine("please enter the first number");
+            int fifth = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the second number");
+            int sixth = Convert.ToInt32(Console.ReadLine());
+
+            Calculator Calculator3 = new Calculator(fifth, sixth);
+            Calculator3.Addition();
+            Calculator3.substraction();
+            Calculator3.Multiplication();
             Console.ReadLine();
+
         }
     }
 }

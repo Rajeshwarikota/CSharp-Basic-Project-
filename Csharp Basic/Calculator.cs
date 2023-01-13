@@ -38,5 +38,11 @@ namespace Csharp_Basic
             result = first * second;
             Console.WriteLine("Multiplication:" + result);
         }
+        public void Division()
+        {
+            result = first / second;
+            Console.WriteLine("Division:" + result);
+        }
+  
     }
 }
